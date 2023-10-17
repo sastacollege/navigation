@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  position: relative;
+  background-color: white;
+  //   box-shadow: 5px 5px 10px #888888;
+  box-shadow: 0px 2px 10px rgba(119, 119, 119, 0.724);
+
+  height: 80px;
+  padding: 10px;
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  // FIRST BOX
+  .logo_box {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    position: relative;
+
+    img {
+      height: 50px;
+    }
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      transform: translateY(-50%);
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  //SECOND BOX
+  .nav_main {
+    float: left;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    ul {
+      list-style: none;
+
+      li:last-child {
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+
+        a {
+          font-size: 24px;
+          text-decoration: none;
+          color: rgba(119, 119, 119, 0.78);
+        }
+      }
+
+      li:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  //THIRD BOX
+  .nav_sign {
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 18px;
+          background-color: rgb(3, 3, 186);
+          padding: 15px 25px;
+          margin-right: 25px;
+          border-radius: 5px;
+          color: #fff;
+        }
+
+        .sign_up_button {
+          color: rgb(3, 3, 186);
+          background-color: #fff;
+          border: 2px solid rgb(3, 3, 186);
+        }
+      }
+    }
+  }
+}
